@@ -20,5 +20,4 @@ env:
   global:
     secure: xxx
 ```
-
 * Setup cron jobs in https://travis-ci.org/github/[org]/[project]/settings.
