@@ -3,8 +3,7 @@
     "collect": {
       "numberOfRuns": 1,
       "url": [
-        "https://www.daily-harvest.com/",
-        "https://www.daily-harvest.com/app/browse/smoothies"
+        "https://www.daily-harvest.com/"
       ]
     },
     "upload": {
