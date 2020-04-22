@@ -10,7 +10,7 @@
     "upload": {
       "target": "lhci",
       "serverBaseUrl": "https://serene-lake-13435.herokuapp.com/app/projects",
-      "token": ""
+      "token": "ef8bd782-aafa-47be-a976-59ce90ca3ca5"
     }
   }
 }
