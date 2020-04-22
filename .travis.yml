@@ -1,0 +1,17 @@
+language: node_js
+node_js: lts/*
+addons:
+  chrome: stable
+before_install:
+  - npm install -g @lhci/cli@0.3.x
+script:
+  - export LHCI_BUILD_CONTEXT__CURRENT_HASH=$(head -n 4096 /dev/urandom | openssl sha1 | sed 's/(stdin)=//g')
+  - export LHCI_BUILD_CONTEXT__COMMIT_TIME=$(date +%Y-%m-%dT%H:%M:%S%z)
+  - export LHCI_BUILD_CONTEXT__CURRENT_BRANCH=master
+  - export LHCI_BUILD_CONTEXT__COMMIT_MESSAGE="Periodic run"
+  - export LHCI_BUILD_CONTEXT__AUTHOR="Liccy Fuentes <liccy.fuentes@daily-harvest.com>"
+  - export LHCI_BUILD_CONTEXT__AVATAR_URL="https://lh3.googleusercontent.com/-cGaW4g3_mNA/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnAeYugGyGDLcBVua-iOVSnIRpIjw/photo.jpg?sz=46"
+  - lhci autorun --upload.token="$LHCI_UPLOAD__TOKEN" # run lighthouse CI
+env:
+  global:
+    - secure: "eApxiMZeOgzNtOolJ5WdvKxgYaUBOfPPt9Iuqk9QHdjZMaWpIilZr1lPdrsmpQRIBXlZg4x7h672EIEcaeu1cKoKmzWGI33PpJCCdf3jAvpYUnmJ+SUZg5E5FYp5ox0ZLl/DmcgfVVRYU6lpXV0NpzxsmxF3wznelcO561bhVn05+HWnc8RTsP3KKOMBxjbNGKv0Sx0/kEnoYX8ADMvv9/0U7lD5ejjc2tU4BEYCjUraJ1go5XRJ+Q2XzPlKSN2f+sTp7cD6WWA+CDXdadh/z/p8g4dCMIsOTt6nL2CtxPPHgyZRoUUEpuWtBxjG2i12DZH/MftN0Wfjb9SCPo6EbaWDChjLCizFAamYpGVacDGy+4LfrqwDmo7yMjUPjCAXIzwhI97eyV9Uk3maaHfXl41cnU80eWvLqfa9ZmmQw4PQJZmSZnd4P2C8+lnY9jM/SVNH6ibKktS1TrmhrEM1orOOSXfAhVoOUcA1te3UGxGVSeC2lrTCkoKOIthSV1TchTTvtBQS5VdByJmBp+yf1xSvZxPYggEgtfsrxLjsnHGySuRPRkXlM7Xu0LgaQt+xuNgltEP4clLpV+A2cBqLC2CLnnCgIf1TUXw6hXgP3GhaVqzTtSSpreeKdUPrQ4hrgmVbOKaiMABFGEmfVxm0W9DlbnJmo5u5FbYfJdW/zFI="
