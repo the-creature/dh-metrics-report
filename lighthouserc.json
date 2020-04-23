@@ -11,12 +11,16 @@
         "https://www.daily-harvest.com/app/gifts",
         "https://www.daily-harvest.com/browse/smoothies/mandarin-carrot",
         "https://www.daily-harvest.com/login"
-      ]
+      ],
+      "settings": {
+        "configPath": "./custom-config.js",
+        "plugins": ["lighthouse-plugin-field-performance"]
+      }
     },
     "upload": {
       "target": "lhci",
       "serverBaseUrl": "https://serene-lake-13435.herokuapp.com/app/projects",
-      "token": "ef8bd782-aafa-47be-a976-59ce90ca3ca5"
+      "token": ""
     }
   }
 }
