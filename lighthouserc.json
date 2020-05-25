@@ -1,5 +1,12 @@
 {
   "ci": {
+    "assert": {
+      "preset": "lighthouse:recommended",
+      "assertions": {
+        "uses-rel-preload": "off",
+        "uses-rel-preconnect": "off"
+      }
+    },
     "collect": {
       "numberOfRuns": 1,
       "url": [
@@ -14,7 +21,7 @@
     },
     "upload": {
       "target": "lhci",
-      "serverBaseUrl": "https://serene-lake-13435.herokuapp.com/app/projects",
+      "serverBaseUrl": "https://dh-metrics-report.herokuapp.com/app/projects",
       "token": ""
     }
   }
