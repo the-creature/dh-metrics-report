@@ -20,7 +20,7 @@
     },
     "upload": {
       "target": "lhci",
-      "serverBaseUrl": "https://dh-metrics-report.herokuapp.com/app/projects",
+      "serverBaseUrl": "https://dh-metrics-report.herokuapp.com",
       "token": ""
     }
   }
