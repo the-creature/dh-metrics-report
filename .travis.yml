@@ -3,7 +3,7 @@ node_js: v12
 addons:
   chrome: stable
 before_install:
-  - npm install -g @lhci/cli@0.3.x
+  - npm install -g @lhci/cli@0.4.x
   - npm install -g lighthouse
   - npm install -g lighthouse-plugin-field-performance
 script:
@@ -16,4 +16,4 @@ script:
   - lhci autorun --upload.token="$LHCI_UPLOAD__TOKEN" # run lighthouse CI
 env:
   global: 
-    - secure: "lEI2AT2W1otIDWct1c5zy5d6mnZBAW+wGCHqjdor+HjIwt1yOlAdZCZr294L9MMjzuTuxUr3sk4KzkoZKNaqwCLY9inDDJD4u5uvLhuonDn+kI4wcSlPgAFGvsPLZ5DyoSwAUwq5lmMWCV+b2EmXI2bExnHLoEB4wnuy0Aq7bhAqnDJmDtE5y5F/+RU99hxGRfzgHbNMC6KftBIIM2CBD70S0gOmwvrowzc1NQMpwJEMt0j7/8fZOX6bpy67HpG+p9WYfB7ntnVigCHZ8DlcLHHyRqFr/Z0qRkFUCh6OogLmurJGTnQyUiTx02IzVhxzGhQIfw7TDfnPtAZMRY1dMT3lKOjGuoq5b1dnLpiMF3lGu8hleX75bAMD7ioN7mvEdvkG4VRrz1oNgKU7ZU9oMcH6pxtwXspieX7/ZvV/cLyMf2261na5ow0cQB44qMd0PXE79OEFe7/Dq7jHPkeCSOiFyjuA2Wklm5ecigIzOLkD/PVEueOQzckb9Ap+PoDbAZzSkiuFCDjEA9lB7Ln1FXvoW+zsnhD4g0psJloZmj5um5jlAC0ye6j38QXSbIfcNtqa+3I/9Z+sgDagj36yPdwhrNGz/mEByCoIGrpmGuo+rVKtO3gpYbNWM4I52e2Cb5RbWlaiz+GJ2DVKeyUll0H679fpLbdPagxFwm1YBIo="
+    - secure: "W5DHkT3aA5cahgyyzXExo4+LJxJg+LVXVaDtmYtD4vlzow2B/Z3rnkuRzFpw7wEaF3TLlsLj/fk7IOOgj3ShyOZEnNf6UNh/QCqx/miopLuWJffu3b524poMW6DnCquAZmQPp7yRWVSjEdhCRDuqbPrywKDHD78MZeCjqgqw/CjDzfD3L9bHneuZdHrNbgR7Pc02LF0XYfTdOPFG4/xTSkF8X8CrUyoIEmr1cxaRnadZRaCQH5R/Na1Gj8GnnhG9STDb4SOqIYBLD/YJged1W88bhk+VDow36NUInzIJlKIdH2hI0nKtmxehS7ybWfuFNbniVmWJ9LgPr7bQDuhXDLvvJGpAJU2fpek2gWJ/xo+wqcxppXFG5bN60X5m0bRYyDLhMGgAkMiIei9XmlqwSKo74XiPjWkJDQvUUy8K7C9lWYjpqO1rNdX1vNX3LIqUz7u/7SteUXbJEdtoVWv/0FIy5ShgCwcdPMS/rwPcsZ1eaEmFnKiOvCYkWY9RnyRxZQOwDEiSB4XYDet1JyGshhoI7g4n/ype9AJI9y2fzc27n9TZ9r6p/uLBUNMrG04DfZ9uAv4sGQ3nYubrhQGzGMbI30IOirU1rkh4WCRMHNhmXyn0Ed2LwQbmhPVlBiu8XxeowcVvlYY6DtsdaYaJLCNpCInsCji/xkcIm2GbSgs="
