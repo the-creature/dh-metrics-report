@@ -13,8 +13,10 @@
         "https://www.daily-harvest.com/",
         "https://www.daily-harvest.com/browse/smoothies",
         "https://www.daily-harvest.com/browse/smoothies/mandarin-carrot",
+        "https://www.daily-harvest.com/start",
+        "https://www.daily-harvest.com/browse/all",        
         "https://development-dot-development-dot-dh-dev-242811.appspot.com/about",
-        "https://feat-gs-1846-opt-about-dot-development-dot-dh-dev-242811.uc.r.appspot.com/about"
+        "https://feat-gs-1846-opt-about-dot-development-dot-dh-dev-242811.uc.r.appspot.com/about",      
       ],
       "settings": {
         "configPath": "./custom-config.js",
